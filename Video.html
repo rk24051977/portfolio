@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecteur Vidéo</title>
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Conteneur principal -->
+    <div class="container">
+        <h1>Lecteur Vidéo</h1>
+        
+        <!-- Section pour afficher la vidéo -->
+        <div class="media-section">
+            <!-- 
+                Vidéo HTML5 avec contrôles
+                controls : affiche les boutons play, pause, volume
+                width : largeur de la vidéo
+            -->
+            <video controls class="media-content">
+                <!-- Source de la vidéo (format MP4) -->
+                <source 
+                    src="https://---------" 
+                    type="video/mp4"
+                >
+                <!-- Message affiché si le navigateur ne supporte pas la vidéo -->
+                Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+            </video>
+            <p class="media-caption">
+                Vidéo d'exemple - etc
+            </p>
+        </div>
+
+        <!-- Lien de retour vers la page principale -->
+        <div class="navigation">
+            <a href="index.html" class="btn btn-secondary">
+                ← Retour au Formulaire
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Interactif - Tutoriel JavaScript</title>
+    <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Conteneur principal de la page -->
+    <div class="container">
+        <h1>Formulaire d'Inscription</h1>
+        
+        <!-- Section du formulaire -->
+        <div class="form-section">
+            <h2>Vos Informations</h2>
+            
+            <!-- Formulaire avec les champs nom, prénom et email -->
+            <form id="monFormulaire">
+                <!-- Champ Nom -->
+                <div class="form-group">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Entrez votre nom">
+                </div>
+                
+                <!-- Champ Prénom -->
+                <div class="form-group">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom">
+                </div>
+                
+                <!-- Champ Email -->
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="exemple@email.com">
+                </div>
+            </form>
+        </div>
+
+        <!-- Section des boutons de modification -->
+        <div class="buttons-section">
+            <h2>Modifier les Informations</h2>
+            <p>Cliquez sur un bouton pour modifier le champ correspondant</p>
+            
+            <!-- Bouton pour modifier le nom -->
+            <button class="btn btn-primary" onclick="modifierNom()">
+                Modifier le Nom
+            </button>
+            
+            <!-- Bouton pour modifier le prénom -->
+            <button class="btn btn-primary" onclick="modifierPrenom()">
+                Modifier le Prénom
+            </button>
+            
+            <!-- Bouton pour modifier l'email -->
+            <button class="btn btn-primary" onclick="modifierEmail()">
+                Modifier l'Email
+            </button>
+        </div>
+
+        <!-- Section d'affichage des valeurs actuelles -->
+        <div class="display-section">
+            <h2>Valeurs Actuelles</h2>
+            <!-- Zone où les valeurs seront affichées -->
+            <div id="affichageValeurs" class="display-box">
+                <p><strong>Nom :</strong> <span id="affichageNom">Non renseigné</span></p>
+                <p><strong>Prénom :</strong> <span id="affichagePrenom">Non renseigné</span></p>
+                <p><strong>Email :</strong> <span id="affichageEmail">Non renseigné</span></p>
+            </div>
+            
+            <!-- Bouton pour afficher toutes les valeurs -->
+            <button class="btn btn-success" onclick="afficherToutesLesValeurs()">
+                Afficher Toutes les Valeurs
+            </button>
+        </div>
+
+        <!-- Section des liens vers les autres pages -->
+        <div class="links-section">
+            <h2>Navigation</h2>
+            
+            <!-- Lien vers la page image -->
+            <a href="image.html" class="link-btn">
+                Voir l'Image
+            </a>
+            
+            <!-- Lien vers la page vidéo -->
+            <a href="video.html" class="link-btn">
+                Voir la Vidéo
+            </a>
+        </div>
+    </div>
+
+    <!-- Lien vers le fichier JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
